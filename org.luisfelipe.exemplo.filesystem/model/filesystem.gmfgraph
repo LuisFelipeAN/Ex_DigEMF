@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="filesystem">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ShortcutTargetFigureTargetDecoration"/>
+    <descriptors name="DriveFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="DriveFigure" qualifiedClassName="figuras.Drive">
+        <preferredSize dx="120" dy="80"/>
+        <children xsi:type="gmfgraph:Label" name="DriveLabelFigure" text="Drive"/>
+      </actualFigure>
+      <accessors accessor="getFigureDriveLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="FolderFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="FolderFigure" qualifiedClassName="figuras.Pasta">
+        <preferredSize dx="120" dy="80"/>
+        <children xsi:type="gmfgraph:Label" name="FolderLabelFigure" text="Folder"/>
+      </actualFigure>
+      <accessors accessor="getFigureFolderLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ShortcutFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="ShortcutFigure" qualifiedClassName="figuras.Arquivo">
+        <preferredSize dx="120" dy="80"/>
+        <children xsi:type="gmfgraph:Label" name="ShortcutLabelFigure" text="Shortcut"/>
+      </actualFigure>
+      <accessors accessor="getFigureShortcutLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="FileFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="FileFigure" qualifiedClassName="figuras.Arquivo">
+        <preferredSize dx="120" dy="80"/>
+        <children xsi:type="gmfgraph:Label" name="FileLabelFigure" text="File"/>
+      </actualFigure>
+      <accessors accessor="getFigureFileLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="SyncFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SyncFigure" lineWidth="2" lineKind="LINE_DOT"/>
+    </descriptors>
+    <descriptors name="ShortcutTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ShortcutTargetFigure" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors name="ShortcutTargetExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ShortcutTargetExternalLabel"/>
+    </descriptors>
+  </figures>
+  <nodes name="Drive" figure="DriveFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="120" dy="80"/>
+    </facets>
+  </nodes>
+  <nodes name="Folder" figure="FolderFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="120" dy="80"/>
+    </facets>
+  </nodes>
+  <nodes name="Shortcut" figure="ShortcutFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="120" dy="80"/>
+    </facets>
+  </nodes>
+  <nodes name="File" figure="FileFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="120" dy="80"/>
+    </facets>
+  </nodes>
+  <connections name="Sync" figure="SyncFigure"/>
+  <connections name="ShortcutTarget" figure="ShortcutTargetFigure"/>
+  <labels name="DriveLabel" figure="DriveFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="FolderLabel" figure="FolderFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="ShortcutLabel" figure="ShortcutFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="FileLabel" figure="FileFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="ShortcutTargetExternalLabel" figure="ShortcutTargetExternalLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>

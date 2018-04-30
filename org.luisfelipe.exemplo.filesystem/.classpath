@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="/opt/eclipse-epsilon/eclipse-epsilon-1.4-linux-gtk-x86_64/plugins/org.eclipse.draw2d_3.10.100.201606061308.jar"/>
+	<classpathentry kind="lib" path="/opt/eclipse-epsilon/eclipse-epsilon-1.4-linux-gtk-x86_64/plugins/org.eclipse.gmf.runtime.draw2d.ui_1.9.0.201606071959.jar"/>
+	<classpathentry kind="lib" path="/opt/eclipse-epsilon/eclipse-epsilon-1.4-linux-gtk-x86_64/plugins/org.eclipse.swt.gtk.linux.x86_64_3.105.1.v20160907-0248.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

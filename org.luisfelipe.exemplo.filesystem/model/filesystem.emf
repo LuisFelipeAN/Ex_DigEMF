@@ -1,0 +1,35 @@
+@namespace(uri="filesystem", prefix="filesystem")
+package filesystem;
+ 
+@gmf.diagram
+class Filesystem {
+    val Drive[*] drives;
+    val Folder[*] folders;
+    val File[*] files;
+    val Shortcut[*] atalhos;
+    val Sync[*] syncs;
+    attr Boolean autoID = true;
+}
+@gmf.node(figure = "figuras.Drive")
+class Drive extends Folder {
+
+}
+@gmf.node(figure = "figuras.Pasta")
+class Folder extends File {
+   attr String nome;
+}
+class Shortcut extends File {
+    @gmf.link(target.decoration="arrow",  figure = "figuras.Seta", style="dash")
+    ref File target;
+}
+ 
+@gmf.link(source="source", target="target", figure = "figuras.Seta", style="dot", width="2")
+class Sync {
+    ref File source;
+    ref File target;
+}
+ 
+@gmf.node(label="name",figure="figuras.Arquivo", size="120,80")
+class File {
+    attr String name;
+}
