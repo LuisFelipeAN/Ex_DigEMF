@@ -1,5 +1,5 @@
 org.luisfelipe.exemplo.filesystem.diagram/*
-org.luisfelipe.exemplo.filesystem/src/*
+
 org.luisfelipe.exemplo.filesystem/model/*
 !*.emf
 org.luisfelipe.exemplo.filesystem.edit/*
