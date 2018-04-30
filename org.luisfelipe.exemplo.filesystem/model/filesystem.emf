@@ -8,7 +8,6 @@ class Filesystem {
     val File[*] files;
     val Shortcut[*] atalhos;
     val Sync[*] syncs;
-    attr Boolean autoID = true;
 }
 @gmf.node(figure = "figuras.Drive")
 class Drive extends Folder {
