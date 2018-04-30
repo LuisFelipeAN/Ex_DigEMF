@@ -1,0 +1,6 @@
+org.luisfelipe.exemplo.filesystem.diagram/*
+org.luisfelipe.exemplo.filesystem.edit/*
+org.luisfelipe.exemplo.filesystem.editor/*
+.metadata/*
+org.luisfelipe.exemplo.filesystem.tests/*
+*.class
